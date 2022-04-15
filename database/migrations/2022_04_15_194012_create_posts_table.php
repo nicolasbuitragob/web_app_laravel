@@ -15,16 +15,16 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
 
             $table ->unsignedBigInteger('course_id');
 
             $table -> string('name');
             $table -> boolean('free')->default(0);
         
-            $table -> text('description');
+            $table->timestamps();
 
-            $table -> foreign('course_id')->references('id') -> on('users');
+            $table -> foreign('course_id')->references('id') -> on('courses');
+
         });
     }
 
