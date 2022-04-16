@@ -7,4 +7,7 @@
         <h3 class = "text-l text-gray-600"> Let's change the world!</h3>
     </div>
 
+    <livewire:course-list>
+
+
 @endsection
