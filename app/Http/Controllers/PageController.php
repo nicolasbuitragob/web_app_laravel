@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Course;
 
 class PageController extends Controller
 {
@@ -10,7 +11,7 @@ class PageController extends Controller
         return view('index');
     }
 
-    public function course(){
-        return view('courses');
+    public function course(Course $course){
+        return view('course',compact('course'));
     }
 }
