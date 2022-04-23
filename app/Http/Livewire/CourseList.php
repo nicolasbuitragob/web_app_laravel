@@ -11,8 +11,8 @@ class CourseList extends Component
     {
         return view('livewire.course-list',[
             'courses' => Course::latest()
-            // ->with('user')
-            // ->take(9)->get()
+            ->with('user')
+            ->take(9)->get()
         ]);
     }
 }
