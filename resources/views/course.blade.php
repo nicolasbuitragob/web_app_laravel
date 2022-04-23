@@ -5,7 +5,7 @@
         <div class = "p-8 bg-gray-200 col-span-1">
             <ul class = "flex flex-col">
                 <li class = "font-medium text-sm text-gray-400 uppercase mb-4">
-                    Contenido
+                    Content
                 </li>
             </ul>
         </div>
