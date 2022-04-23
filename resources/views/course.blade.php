@@ -35,8 +35,13 @@
                 <p class = "text-xl text-gray-300 text-xs">
                     {{$course->created_at->diffForHumans()}}
                 </p>
-            </div>                
-        </div>
+            </div>
+            <div class = "grid grid-cols-2 gap-4 my-8">
+                @foreach($course->similar() as $course)
+                    <x-course-card : course = "course"/>
+                @endforeach
+            </div>
+        </div>        
     </div>
 
     <div class = "text-center mt-4">
